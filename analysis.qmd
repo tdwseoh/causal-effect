@@ -1,0 +1,22 @@
+---
+title: "Causal Effect"
+author: "Thomas Seoh"
+format: html
+execute: 
+  echo: false
+---
+
+```{r}
+#| message: FALSE
+library(tidyverse)
+library(primer.data)
+```
+
+```{r}
+ch6 <- trains |>  
+  select(att_end, treatment)
+```
+
+
+## **Analysis**
+This data was conducted in 2012 by Enos, which the data consists of attitudes toward immigration with no exposure and exposure to Spanish-speakers of each individuals on train platforms. To use this data, we have to assume the validity, which may be flawed in ways such as that Spanish-speakers may not have the same impact as in 2012, compared to 2024.
